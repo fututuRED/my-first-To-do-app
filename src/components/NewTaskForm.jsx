@@ -23,73 +23,81 @@ function NewTaskForm({ addTask }) {
     <div className="form">
       <form onSubmit={createTask}>
         <div className="newTask">
-          <label htmlFor="newTask">What is it you want to do btw?</label>
+          {/* <label htmlFor="newTask">What is it you want to do btw?</label> */}
           <textarea
             value={newTask}
             onChange={(e) => setNewTask(e.target.value)}
-          />
+            name="bio"
+            placeholder="Write your to do thing..."
+            aria-label="Professional short bio"
+          ></textarea>
         </div>
 
         <div className="urgency">
-          🔥Urgent?🔥
-          <input
-            type="radio"
-            id="low"
-            name="urgency"
-            value="low"
-            checked={level === "low"}
-            onChange={(e) => setLevel(e.target.value)}
-          />
-          <label htmlFor="low">ok...🔥</label>
-          <input
-            type="radio"
-            id="medium"
-            name="urgency"
-            value="medium"
-            checked={level === "medium"}
-            onChange={(e) => setLevel(e.target.value)}
-          />
-          <label htmlFor="medium">Hmmmm!🔥🔥</label>
-          <input
-            type="radio"
-            id="high"
-            name="urgency"
-            value="high"
-            checked={level === "high"}
-            onChange={(e) => setLevel(e.target.value)}
-          />
-          <label htmlFor="high">DAMN!🔥🔥🔥</label>
+          <fieldset>
+            <legend>🔥Urgent?🔥</legend>
+            <input
+              type="radio"
+              id="low"
+              name="urgency"
+              value="low"
+              checked={level === "low"}
+              onChange={(e) => setLevel(e.target.value)}
+            />
+            <label htmlFor="low">ok...🔥</label>
+            <input
+              type="radio"
+              id="medium"
+              name="urgency"
+              value="medium"
+              checked={level === "medium"}
+              onChange={(e) => setLevel(e.target.value)}
+            />
+            <label htmlFor="medium">Hmmmm!🔥🔥</label>
+            <input
+              type="radio"
+              id="high"
+              name="urgency"
+              value="high"
+              checked={level === "high"}
+              onChange={(e) => setLevel(e.target.value)}
+            />
+            <label htmlFor="high">DAMN!🔥🔥🔥</label>
+          </fieldset>
         </div>
 
         <div className="color">
-          <label htmlFor="color">Color?</label>
-          <input
-            type="radio"
-            id="orange"
-            name="color"
-            value="orange"
-            checked={color === "coral"}
-            onChange={(e) => setColor(e.target.value)}
-          />
-          <label htmlFor="orange">Orangish</label>
-          <input
-            type="radio"
-            id="green"
-            name="color"
-            value="green"
-            checked={color === "cadetblue"}
-            onChange={(e) => setColor(e.target.value)}
-          />
-          <label htmlFor="green">Greenish</label>
-          <input
-            type="radio"
-            id="blue"
-            name="color"
-            value="blue"
-            checked={color === "blueviolet"}
-            onChange={(e) => setColor(e.target.value)}
-          />
-          <label htmlFor="blue">Violetish</label>
+          <fieldset>
+            <legend>Color?</legend>
+            <label htmlFor="color">Color?</label>
+            <input
+              type="radio"
+              id="orange"
+              name="color"
+              value="coral"
+              checked={color === "coral"}
+              onChange={(e) => setColor(e.target.value)}
+            />
+            <label htmlFor="coral">Orangish</label>
+            <input
+              type="radio"
+              id="green"
+              name="color"
+              value="cadetblue"
+              checked={color === "cadetblue"}
+              onChange={(e) => setColor(e.target.value)}
+            />
+            <label htmlFor="cadetblue">Greenish</label>
+            <input
+              type="radio"
+              id="blue"
+              name="color"
+              value="blueviolet"
+              checked={color === "blueviolet"}
+              onChange={(e) => setColor(e.target.value)}
+            />
+            <label htmlFor="blueviolet">Violetish</label>
+          </fieldset>
         </div>
         <button>Create Task</button>
       </form>

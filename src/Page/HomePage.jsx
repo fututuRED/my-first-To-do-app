@@ -7,9 +7,20 @@ function HomePage() {
         <h1>Welcome to the To-Do APp</h1>
         <p>A new way of DOing thINGs </p>
         <p>
-          Tired of the same old same old same old ... TO DO LIST Try this and
-          you won't regret it ! ✍ your little task Tell us how urgent it is 💥
-          🔷 🔶 🥬 Pick one color New days, New Wayz 😉
+          Tired of the same old
+          <br />
+          same old <br />
+          same old <br />
+          same old ...
+          <br />
+          TO DO LIST Try this <br />
+          and you won't regret it!
+          <br /> ✍ your little task <br />
+          Tell us how urgent it is 💥
+          <br />
+          🔷 🔶 🥬 Pick one color <br />
+          New days, New Wayz <br />
+          😉
         </p>
       </div>
     </>
