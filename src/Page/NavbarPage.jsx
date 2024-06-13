@@ -1,24 +1,33 @@
 import React from "react";
-import { IconContext } from "react-icons";
 import { FcTodoList } from "react-icons/fc";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 function NavbarPage() {
   return (
-    <>
-      <navbar className="navbar">
-        <ul>
-          <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
-          {/* <Link to="/not-found">Not Found Page</Link> */}
-        </ul>
+    <nav className="navbar">
+      <ul className="nav">
+        <li>
+          <NavLink to="/">Home</NavLink>
+        </li>
+        <li>
+          <NavLink to="/example">Example</NavLink>
+        </li>
+        <li>
+          <NavLink to="/dashboard">Create</NavLink>
+        </li>
 
-        <h1> ToDo ApP </h1>
-        <label className="logo">
-          <FcTodoList />
-        </label>
-      </navbar>
-    </>
+        <li>
+          <NavLink to="/to-do-list">To-Do List</NavLink>
+        </li>
+        <li>
+          <NavLink to="/about">About</NavLink>
+        </li>
+      </ul>
+      <h1>ToDo App</h1>
+      <label className="logo">
+        <FcTodoList />
+      </label>
+    </nav>
   );
 }
 
