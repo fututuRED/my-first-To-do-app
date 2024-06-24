@@ -113,3 +113,27 @@ li {
   font-size: 1rem;
   margin: 4px 2px;
 }
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 5px 0;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 0 1rem;
+}
+
+.icon {
+  font-size: 1rem;
+  color: #0a66c2;
+  transition: color 0.3s;
+}
+
+a:hover .icon {
+  color: #0056b3;
+}
