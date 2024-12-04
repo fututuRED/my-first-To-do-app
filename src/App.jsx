@@ -75,11 +75,11 @@ function App() {
         <Route
           path="/item-details/:id"
           element={
-            <ItemDetailsPage
+            <ItemDetailsPage>
               tasks={tasks}
               setTasks={setTasks}
               deleteTaskFromToDoList={deleteTaskFromToDoList}
-            />
+            </ItemDetailsPage>
           }
         />
         <Route

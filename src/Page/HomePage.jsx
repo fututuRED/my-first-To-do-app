@@ -5,23 +5,18 @@ function HomePage() {
     <>
       <div className="homepage">
         <h1>Welcome to the To-Do APp</h1>
-        <p>A new way of DOing thINGs </p>
         <p>
-          Tired of the same old
+          A new way of DOing thINGs New days, New Wayz <br />
+          Tired of the same old same old...
           <br />
-          same old <br />
-          same old <br />
-          same old ...
-          <br />
-          TO DO LIST Try this <br />
-          and you won't regret it!
-          <br /> ✍ your little task <br />
-          Tell us how urgent it is 💥
-          <br />
-          🔷 🔶 🥬 Pick one color <br />
-          New days, New Wayz <br />
-          😉
+          Try this TO DO LIST
         </p>
+        <ul>
+          <li>Type your task ✍</li>
+          <li>Tell us how urgent it is 💥</li>
+          <li>Pick one color 🟨 🟩 🟪 </li>
+          <li>Once created ☑ if done, or keep it ⛌ </li>
+        </ul>
       </div>
       <footer>
         <div className="about-container">
